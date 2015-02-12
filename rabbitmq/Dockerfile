@@ -21,7 +21,6 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
 # configure
-#ADD broker_definitions.json /etc/rabbitmq/broker_definitions.json
 ADD supervisord.conf /etc/supervisor/conf.d/rabbitmq.conf
 ADD rabbitmq.config /etc/rabbitmq/rabbitmq.config
 ADD start.sh /start.sh
