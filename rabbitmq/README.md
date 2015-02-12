@@ -1,4 +1,4 @@
-# Ekino BrokerMQ Stack
+# ekino/rabbitmq
 
 ## Description
 
