@@ -51,7 +51,6 @@ to `/etc/rabbitmq/broker_definitions.json`
 docker run --name rabbitmq -d \
   -p 15672:15672 -p 5672:5672 \
   -e ADMIN_PASS=guessit \
-  -v /path/to/file.json:/etc/rabbitmq/broker_definitions.json \
   -v $(readlink -f path/to/file.json):/etc/rabbitmq/definitions.json \
   ekino/rabbitmq:latest
 ```
